@@ -497,6 +497,48 @@ html[data-theme="light"] .icon-sun { display: none; }
   border: 1px solid var(--accent-border);
 }
 
+.clients-strip {
+  margin-top: var(--space-7);
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+
+.clients-label {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  margin-bottom: var(--space-5);
+}
+
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  gap: var(--space-4) var(--space-6);
+}
+
+.clients-list li {
+  font-weight: 700;
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-2);
+  text-align: center;
+  transition: color var(--dur-fast) var(--ease-out);
+}
+.clients-list li:hover { color: var(--text); }
+
+.clients-note {
+  margin-top: var(--space-4);
+  font-size: 0.78rem;
+  color: var(--text-3);
+}
+
 .strength-card h3 {
   font-size: 1.05rem;
   font-weight: 600;

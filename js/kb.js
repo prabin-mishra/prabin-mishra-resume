@@ -56,7 +56,7 @@ window.RESUME_KB = {
 
   facts: [
     { id: "identity", tags: ["who", "profile", "summary", "product", "owner", "manager"], anchor: "#top",
-      text: "Prabin Mishra is a Senior Product Owner / Product Manager focused on enterprise B2B SaaS, logistics & supply chain — now AI-forward. He's based in Whitefield, Bengaluru, India, and at home working across geographies, including the Middle East." },
+      text: "Prabin Mishra is a Senior Product Owner / Product Manager focused on enterprise B2B SaaS, logistics & supply chain — now AI-forward. He's based in Whitefield, Bengaluru, India, and at home working anywhere in the world." },
 
     { id: "experience-years", tags: ["experience", "years", "career", "long"], anchor: "#experience",
       text: "He has 15+ years of total experience (since 2010), with 8+ years focused on product ownership and product management." },
@@ -88,8 +88,8 @@ window.RESUME_KB = {
     { id: "erp-depth", tags: ["erp", "domain", "inventory", "order", "distribution"], anchor: "#strengths",
       text: "His ERP depth covers order-to-cash, order management, distribution, purchasing / AP and inventory — on a live cloud ERP serving 500–2,000 global customers." },
 
-    { id: "nordic-role", tags: ["tcs", "logistics", "mobile", "nordic", "product", "team", "user"], anchor: "#experience",
-      text: "Nov 2018 – Apr 2021, as Technical Product Owner at TCS (Nordic Distribution Mobility) he owned 2–4 simultaneous products (iOS / Android + web) for distribution planning and last-mile execution for a major Nordic logistics / CEP enterprise — up to 10,000 daily users across 3 countries." },
+    { id: "nordic-role", tags: ["tcs", "logistics", "mobile", "nordic", "postnord", "product", "team", "user"], anchor: "#experience",
+      text: "Nov 2018 – Apr 2021, as Technical Product Owner at TCS (Nordic Distribution Mobility) he owned 2–4 simultaneous products (iOS / Android + web) for distribution planning and last-mile execution for PostNord, the Nordic logistics / CEP leader — up to 10,000 daily users across 3 countries." },
 
     { id: "nordic-metrics", tags: ["impact", "logistics", "tcs", "achievement", "stakeholder", "agile"], anchor: "#experience",
       text: "In the Nordic role he achieved ~4% loading-time efficiency per parcel and a 6% reduction in failed deliveries via root-cause analysis on poor KPIs, ran roadmap reviews with C-suite/VP stakeholders in Stockholm, and ran full Agile / Scrum ceremonies across distributed India–Sweden teams." },
@@ -97,11 +97,14 @@ window.RESUME_KB = {
     { id: "business-case", tags: ["achievement", "business", "case", "tcs", "logistics", "consulting", "impact"], anchor: "#experience",
       text: "At TCS Transportation Practice (Jun 2015 – Nov 2018) he built a $50M business case for a logistics technology product (transport-document digitization) targeting Shipping, Port Operators and Postal / Logistics customers — adopted by leadership and it led to a customer deal." },
 
-    { id: "consulting", tags: ["consulting", "tcs", "customer", "o2c", "analysis"], anchor: "#experience",
-      text: "He partnered with 10+ strategic customers across geographies on O2C / R2R process consulting, business analysis and product management." },
+    { id: "consulting", tags: ["consulting", "tcs", "customer", "o2c", "analysis", "maersk", "dhl"], anchor: "#experience",
+      text: "He partnered with 10+ strategic customers across geographies — including Maersk, UPS and DHL Global Forwarding — on O2C / R2R process consulting, business analysis and product management." },
 
-    { id: "bi-platform", tags: ["data", "tcs", "stakeholder", "microsoft"], anchor: "#experience",
-      text: "In 2017–18 (Singapore / Houston) he gathered requirements for a digital BI platform on the Microsoft BI stack, designed executive Power BI dashboards, and trained the Executive Leadership Team (incl. CFO / CXOs) of a tanker owner-operator." },
+    { id: "bi-platform", tags: ["data", "tcs", "stakeholder", "microsoft", "aet"], anchor: "#experience",
+      text: "In 2017–18 (Singapore / Houston) he gathered requirements for a digital BI platform on the Microsoft BI stack, designed executive Power BI dashboards, and trained the Executive Leadership Team (incl. CFO / CXOs) of AET Tankers, a global tanker owner-operator." },
+
+    { id: "logistics-clients", tags: ["clients", "maersk", "dhl", "postnord", "aet", "logistics", "brands"], anchor: "#strengths",
+      text: "His logistics & supply chain track record spans the industry's biggest names: Maersk, UPS and DHL Global Forwarding (TCS Transportation Practice consulting), PostNord (Nordic distribution mobility products) and AET Tankers (executive BI platform)." },
 
     { id: "accenture", tags: ["accenture", "consulting", "healthcare", "pharma", "retail"], anchor: "#experience",
       text: "Apr – Sep 2021 he was Associate Manager at Accenture (Living Systems Advisory), leading consulting teams on maturity assessments and business-transformation engagements for pharma, retail and US healthcare clients." },
@@ -155,7 +158,7 @@ window.RESUME_KB = {
       text: "Email: prabinmishra87@gmail.com · LinkedIn: linkedin.com/in/prabinmishra · GitHub: github.com/prabin-mishra." },
 
     { id: "location-relocation", tags: ["relocation", "uae", "location", "bengaluru", "bangalore", "india", "roles"], anchor: "#contact",
-      text: "He's based in Whitefield, Bengaluru, India, and geographically flexible — he has delivered from India, Sweden, Denmark, Singapore and the US, and the UAE / Dubai is comfortable territory. For the right senior product conversation in B2B SaaS or an AI-forward company (think Lead / Principal Product Manager, Senior / Lead Product Owner, Lead / Principal Business Analyst), his inbox is always open: prabinmishra87@gmail.com." }
+      text: "He's based in Whitefield, Bengaluru, India, and geographically flexible — he has delivered from India, Sweden, Denmark, Singapore and the US, and is open to international locations in general. For the right senior product conversation in B2B SaaS or an AI-forward company (think Lead / Principal Product Manager, Senior / Lead Product Owner, Lead / Principal Business Analyst), his inbox is always open: prabinmishra87@gmail.com." }
   ],
 
   /* Curated intents, checked in order. `match` is tested against the
@@ -165,11 +168,11 @@ window.RESUME_KB = {
       lead: "Hi! Ask me anything about Prabin's experience — ERP, AI tooling, achievements, education, location. I answer only from the verified profile on this page.",
       facts: [] },
 
-    { id: "who", match: /\b(who is|who's|about (him|prabin)|tell me about|introduce|elevator|overview|profile|summary|background)\b/,
+    { id: "who", match: /\b(who is|who's|about (him|prabin)|introduce|elevator|overview|profile|summary|background)\b/,
       lead: "Here's the short version:",
       facts: ["identity", "experience-years", "current-role"] },
 
-    { id: "achievement", match: /\b(achievement|biggest|greatest|proud|flagship|impressive|notable|best work)\b/,
+    { id: "achievement", match: /\b(achievements?|biggest|greatest|proud|flagship|impressive|notable|best work)\b/,
       lead: "His flagship achievement:",
       facts: ["api-platform", "business-case"] },
 
@@ -177,11 +180,11 @@ window.RESUME_KB = {
       lead: "Yes — enterprise ERP is his core depth.",
       facts: ["erp-depth", "current-role", "api-platform"] },
 
-    { id: "ai", match: /\b(ai|artificial intelligence|gpt|gpts|copilot|agent|agentic|llm|prompt|machine learning|genai|automation)\b/,
+    { id: "ai", match: /\b(ai|artificial intelligence|gpts?|copilot|agents?|agentic|llms?|prompt|machine learning|genai|automation)\b/,
       lead: "AI is his differentiator — built and adopted, not just certified:",
       facts: ["ai-tools", "certs-ai", "this-site"] },
 
-    { id: "api", match: /\b(api|apis|endpoint|integration|headless|composable|platform work)\b/,
+    { id: "api", match: /\b(apis?|endpoints?|integrations?|headless|composable|platform work)\b/,
       lead: "The API platform is his flagship:",
       facts: ["api-platform"] },
 
@@ -189,7 +192,7 @@ window.RESUME_KB = {
       lead: "",
       facts: ["experience-years", "timeline-summary"] },
 
-    { id: "relocation", match: /\b(reloc|uae|dubai|abroad|willing to move|visa|work permit|where is he|based|location|remote)\b/,
+    { id: "relocation", match: /\b(relocat\w*|uae|dubai|abroad|willing to move|visas?|work permits?|where is he|based|locations?|remote|international\w*)\b/,
       lead: "",
       facts: ["location-relocation"],
       note: q => /\b(visa|permit|sponsor)\b/.test(q)
@@ -204,27 +207,31 @@ window.RESUME_KB = {
       lead: "",
       facts: ["education-mba", "education-btech"] },
 
-    { id: "certification", match: /\b(certif|credential|pspo|cspo|az.?900|azure fundamentals|scrum\.org|pendo|vanderbilt|itil|iiba|cscmp)\b/,
+    { id: "certification", match: /\b(certif\w*|credentials?|pspo|cspo|az.?900|azure fundamentals|scrum\.org|pendo|vanderbilt|itil|iiba|cscmp)\b/,
       lead: "Certifications, AI-first:",
       facts: ["certs-ai", "certs-product"] },
 
-    { id: "team", match: /\b(team|squad|engineers|manage|managed|leadership style|direct reports|people|how many engineers|led)\b/,
+    { id: "team", match: /\b(teams?|squads?|engineers?|manage|managed|leadership style|direct reports|people|how many engineers|led)\b/,
       lead: "",
       facts: ["team", "nordic-role", "stakeholders"] },
 
-    { id: "stakeholder", match: /\b(stakeholder|c.?suite|cxo|cfo|executive|vp|board|senior leadership)\b/,
+    { id: "stakeholder", match: /\b(stakeholders?|c.?suite|cxos?|cfo|executives?|vps?|board|senior leadership)\b/,
       lead: "Yes — regularly, at three different organizations:",
       facts: ["stakeholders"] },
 
-    { id: "impact", match: /\b(impact|metric|kpi|number|result|outcome|quantif|data.?driven|measurable)\b/,
+    { id: "impact", match: /\b(impact|metrics?|kpis?|numbers?|results?|outcomes?|quantif\w*|data.?driven|measurable)\b/,
       lead: "The quantified wins:",
       facts: ["epicor-metrics", "nordic-metrics", "business-case"] },
 
-    { id: "logistics", match: /\b(logistic|supply chain|last.?mile|cep|parcel|delivery|deliveries|shipping|port|freight|transport)\b/,
-      lead: "Logistics & supply chain run through his whole career:",
-      facts: ["domains", "nordic-role", "business-case"] },
+    { id: "clients", match: /\b(maersk|postnord|aet|dhl|clients?|logos?|brands?)\b|(^|[^-\w])ups\b/,
+      lead: "Named enterprises he has delivered for:",
+      facts: ["logistics-clients", "consulting"] },
 
-    { id: "agile", match: /\b(agile|scrum|safe|kanban|sprint|ceremonies|jira|confluence|backlog|refinement|story mapping)\b/,
+    { id: "logistics", match: /\b(logistics?|supply chain|last.?mile|cep|parcels?|delivery|deliveries|shipping|ports?|freight|transport\w*)\b/,
+      lead: "Logistics & supply chain run through his whole career:",
+      facts: ["logistics-clients", "nordic-role", "business-case"] },
+
+    { id: "agile", match: /\b(agile|scrum|safe|kanban|sprints?|ceremon\w*|jira|confluence|backlogs?|refinement|story mapping)\b/,
       lead: "",
       facts: ["skills-agile", "team", "current-role"] },
 
@@ -240,7 +247,7 @@ window.RESUME_KB = {
       lead: "He builds outside work hours too:",
       facts: ["side-projects", "this-site"] },
 
-    { id: "why-hire", match: /\b(why (should|hire)|strengths|unique|differentiat|stand out|value|good at|uvp|superpower)\b/,
+    { id: "why-hire", match: /\b(why (should|hire)|strengths?|unique|differentiat\w*|stand out|value|good at|uvp|superpowers?)\b/,
       lead: "",
       facts: ["strengths-summary", "ai-tools"] },
 
