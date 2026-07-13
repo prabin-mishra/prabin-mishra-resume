@@ -56,7 +56,7 @@ window.RESUME_KB = {
 
   facts: [
     { id: "identity", tags: ["who", "profile", "summary", "product", "owner", "manager"], anchor: "#top",
-      text: "Prabin Mishra is a Senior Product Owner / Product Manager focused on enterprise B2B SaaS, logistics & supply chain — now AI-forward. He's based in Whitefield, Bengaluru, India, and open to UAE / Dubai relocation." },
+      text: "Prabin Mishra is a Senior Product Owner / Product Manager focused on enterprise B2B SaaS, logistics & supply chain — now AI-forward. He's based in Whitefield, Bengaluru, India, and at home working across geographies, including the Middle East." },
 
     { id: "experience-years", tags: ["experience", "years", "career", "long"], anchor: "#experience",
       text: "He has 15+ years of total experience (since 2010), with 8+ years focused on product ownership and product management." },
@@ -155,14 +155,14 @@ window.RESUME_KB = {
       text: "Email: prabinmishra87@gmail.com · LinkedIn: linkedin.com/in/prabinmishra · GitHub: github.com/prabin-mishra." },
 
     { id: "location-relocation", tags: ["relocation", "uae", "location", "bengaluru", "bangalore", "india", "roles"], anchor: "#contact",
-      text: "He's based in Whitefield, Bengaluru, India, and open to UAE / Dubai relocation. He's targeting Lead / Principal Product Manager, Senior / Lead Product Owner and Lead / Principal Business Analyst roles in B2B SaaS and AI-forward companies." }
+      text: "He's based in Whitefield, Bengaluru, India, and geographically flexible — he has delivered from India, Sweden, Denmark, Singapore and the US, and the UAE / Dubai is comfortable territory. For the right senior product conversation in B2B SaaS or an AI-forward company (think Lead / Principal Product Manager, Senior / Lead Product Owner, Lead / Principal Business Analyst), his inbox is always open: prabinmishra87@gmail.com." }
   ],
 
   /* Curated intents, checked in order. `match` is tested against the
      normalized question; `facts` are composed verbatim into the answer. */
   intents: [
     { id: "greeting", match: /^(hi|hey|hello|yo|namaste|good\s(morning|afternoon|evening))\b/,
-      lead: "Hi! Ask me anything about Prabin's experience — ERP, AI tooling, achievements, education, relocation. I answer only from the verified profile on this page.",
+      lead: "Hi! Ask me anything about Prabin's experience — ERP, AI tooling, achievements, education, location. I answer only from the verified profile on this page.",
       facts: [] },
 
     { id: "who", match: /\b(who is|who's|about (him|prabin)|tell me about|introduce|elevator|overview|profile|summary|background)\b/,
@@ -262,7 +262,7 @@ window.RESUME_KB = {
   ],
 
   responses: {
-    seed: "Hi — I'm the \"Ask my résumé\" assistant. I answer questions about Prabin using only the verified profile on this page. Try one of the suggestions below, or ask your own.",
+    seed: "Hi — I'm the \"Ask my résumé\" assistant. I answer questions about Prabin using only the verified profile on this page — experience, achievements, AI tooling, education, location. Try a suggestion below, or ask your own.",
     noAnswer: "That's outside what this profile covers, and I don't guess — I only answer from the verified facts on this page. For anything else, email Prabin at prabinmishra87@gmail.com — he replies fast."
   }
 };
