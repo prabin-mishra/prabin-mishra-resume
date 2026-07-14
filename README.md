@@ -9,7 +9,7 @@ A single-page, AI-forward résumé site for **Prabin Mishra** — Senior Product
 - **"Ask my résumé" chat** — a conversational panel that answers recruiter questions ("Does he have ERP experience?", "What's his biggest achievement?") from a structured knowledge base ([js/kb.js](js/kb.js)). It runs **entirely in the browser** — no backend, no API key, no network calls — and never invents facts: anything outside the knowledge base gets an honest "that's not covered here, email Prabin" reply.
 - **Scroll-driven career timeline** (2010 → present) with expandable role details and a progress line that fills as you scroll.
 - **Animated impact metrics** — counters that count up on scroll (400+ story backlog, ~6,000 API endpoints, $50M business case, …). Final values are hard-coded in the HTML, so they're correct even with JavaScript disabled or reduced motion enabled.
-- **Dark / light theme** with persistence, refined typography (Inter · Newsreader · JetBrains Mono), and restrained micro-interactions.
+- **System-aware dark / light theme** — follows the visitor's OS/browser color-scheme preference (updating live if it changes, e.g. scheduled dark mode), with a time-of-day fallback when no preference is exposed; the manual toggle overrides and persists. Refined typography (Inter · Newsreader · JetBrains Mono) and restrained micro-interactions.
 - **Accessible**: WCAG AA contrast in both themes, full keyboard navigation, skip link, `aria-expanded`/`aria-controls` on disclosures, `prefers-reduced-motion` respected, readable without JavaScript, print-friendly.
 
 ## Stack

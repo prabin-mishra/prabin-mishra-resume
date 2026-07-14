@@ -29,6 +29,21 @@
   });
   applyThemeUI();
 
+  /* Follow OS/browser theme changes live (e.g. scheduled dark mode at
+     sunset) unless the visitor has made a manual choice. */
+  if (window.matchMedia) {
+    const mq = window.matchMedia("(prefers-color-scheme: dark)");
+    const followSystem = e => {
+      let stored = null;
+      try { stored = localStorage.getItem("pm-theme"); } catch (err) { /* private mode */ }
+      if (stored === "light" || stored === "dark") return;
+      document.documentElement.dataset.theme = e.matches ? "dark" : "light";
+      applyThemeUI();
+    };
+    if (mq.addEventListener) mq.addEventListener("change", followSystem);
+    else if (mq.addListener) mq.addListener(followSystem);
+  }
+
   /* ---------------- Header state ---------------- */
 
   const header = document.getElementById("site-header");
