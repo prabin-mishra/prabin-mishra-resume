@@ -16,8 +16,11 @@ window.RESUME_KB = {
     "#top": "Top of page",
     "#impact": "Impact metrics",
     "#strengths": "Signature strengths",
+    "#supply-chain": "Supply chain, end to end",
+    "#progression": "Career progression",
     "#experience": "Career timeline",
-    "#projects": "Side projects",
+    "#projects": "Project case studies",
+    "#side-projects": "Side projects",
     "#skills": "Skills",
     "#credentials": "Certifications & education",
     "#contact": "Contact"
@@ -42,6 +45,10 @@ window.RESUME_KB = {
     lastmile: "logistics", parcel: "logistics", parcels: "logistics", delivery: "logistics",
     deliveries: "logistics", shipping: "logistics", ports: "logistics", port: "logistics",
     freight: "logistics", transport: "logistics", transportation: "logistics", cep: "logistics",
+    warehouse: "logistics", warehousing: "logistics", warehouses: "logistics", terminal: "logistics",
+    terminals: "logistics", ocean: "logistics", carrier: "logistics", carriers: "logistics",
+    forwarder: "logistics", forwarding: "logistics", yard: "logistics", container: "logistics",
+    containers: "logistics", "supplychain": "logistics", chain: "logistics",
     kpi: "impact", kpis: "impact", metrics: "impact", metric: "impact", numbers: "impact",
     results: "impact", outcomes: "impact", quantified: "impact",
     scrum: "agile", safe: "agile", kanban: "agile", sprint: "agile", sprints: "agile",
@@ -49,6 +56,8 @@ window.RESUME_KB = {
     tableau: "data", sql: "data", dashboards: "data", dashboard: "data", analytics: "data",
     azure: "cloud", aws: "cloud", migration: "cloud", saas: "cloud",
     tata: "tcs", bistrack: "epicor", erp: "erp",
+    progression: "career", progress: "career", promoted: "career", promotion: "career",
+    promotions: "career", trajectory: "career", ladder: "career", path: "career",
     achievements: "achievement", accomplishment: "achievement", accomplishments: "achievement",
     wins: "achievement", highlight: "achievement", highlights: "achievement",
     backlog: "product", roadmap: "product", stories: "product", prioritization: "product"
@@ -56,7 +65,10 @@ window.RESUME_KB = {
 
   facts: [
     { id: "identity", tags: ["who", "profile", "summary", "product", "owner", "manager"], anchor: "#top",
-      text: "Prabin Mishra is a Senior Product Owner / Product Manager focused on enterprise B2B SaaS, logistics & supply chain — now AI-forward. He's based in Whitefield, Bengaluru, India, and at home working anywhere in the world." },
+      text: "Prabin Mishra is a Senior Product Owner / Product Manager focused on supply chain & logistics software and the enterprise B2B SaaS ERP underneath it — now AI-forward. He's based in Whitefield, Bengaluru, India, and at home working anywhere in the world." },
+
+    { id: "chain-coverage", tags: ["supply", "chain", "logistics", "ocean", "freight", "port", "terminal", "warehouse", "lastmile", "domain", "coverage"], anchor: "#supply-chain",
+      text: "He has shipped product against every link of the physical chain: ocean freight and carriers (Maersk, UPS, DHL Global Forwarding, AET Tankers), ports and terminals (transport-document digitization for port operators), warehousing and distribution (inventory, stock receipts, purchasing / AP and order management on Epicor BisTrack Web), transport and distribution planning, and last-mile / CEP execution for PostNord." },
 
     { id: "experience-years", tags: ["experience", "years", "career", "long"], anchor: "#experience",
       text: "He has 15+ years of total experience (since 2010), with 8+ years focused on product ownership and product management." },
@@ -64,14 +76,20 @@ window.RESUME_KB = {
     { id: "timeline-summary", tags: ["career", "timeline", "history", "companies", "employers"], anchor: "#experience",
       text: "Career path: TCS, Systems Engineer (2010–14) → Great Lakes Institute of Management, PGPM/MBA (2014–15) → TCS, Business Consultant / Business Analyst, Transportation Practice (2015–18) → TCS, Technical Product Owner, Nordic Distribution Mobility (2018–21) → Accenture, Associate Manager (Apr–Sep 2021) → Epicor, Product Owner, BisTrack Web (Sep 2021–present)." },
 
+    { id: "progression", tags: ["career", "progression", "timeline", "seniority", "levels", "growth"], anchor: "#progression",
+      text: "The progression is five steps and one deliberate pause: Step 1 operate — Systems Engineer running 320+ middleware interfaces 24×7 (TCS, 2010–14); a pivot to retool — full-time PGPM/MBA, Magna Cum Laude (Great Lakes, 2014–15); Step 2 analyse — Business Consultant / BA in TCS's Transportation Practice, 10+ strategic customers and a $50M business case adopted (2015–18); Step 3 own a product — Technical Product Owner for PostNord, 2–4 products and up to 10,000 daily users across 3 countries (TCS, 2018–21); Step 4 lead teams — Associate Manager leading consulting teams (Accenture, 2021); Step 5 own a platform — Product Owner of BisTrack Web at Epicor, where he leads the web product (vision, roadmap and a 1,400+ story backlog, now live at 50+ branches across 20+ customers), built and trained the business-analyst and design team that carried the migration, directs 10–20 engineers and is delivering the ~6,000-endpoint API platform (2021–present). Each step added a layer of ownership: the system, then the analysis, then the product, then the team, then the platform." },
+
+    { id: "case-studies", tags: ["projects", "cases", "work", "portfolio", "builds", "achievement"], anchor: "#projects",
+      text: "Five project case studies carry the record: (1) the BisTrack API platform — ~6,000 endpoints across 1,000 API groups, specified with an AI agent he built, now in controlled release with a pilot customer seeing success; (2) the on-prem → cloud SaaS migration of BisTrack — vision, roadmap and a 1,400+ story backlog, a BA and design team built and trained to carry it, the web product now live at 50+ branches across 20+ customers, order creation ~7% faster, journey planning +4%, two new categories live; (3) PostNord last-mile and distribution planning — 6% fewer failed deliveries, ~4% loading-time efficiency per parcel, 10,000 daily users; (4) the $50M transport-document digitization business case — adopted by leadership and converted into a customer deal; (5) the AET Tankers executive BI platform — Power BI dashboards the CFO and CXOs were trained on and moved onto." },
+
     { id: "current-role", tags: ["epicor", "erp", "current", "role", "job", "product", "cloud"], anchor: "#experience",
-      text: "Since Sep 2021 he is Product Owner of BisTrack Web at Epicor — a cloud SaaS distribution ERP for wholesale distribution & building materials serving 500–2,000 global customers. He owns the end-to-end roadmap and a 400+ user-story backlog, prioritizing the legacy on-prem → cloud SaaS migration with C-suite/VP stakeholders across Product, Engineering and Sales." },
+      text: "Since Sep 2021 he is Product Owner of BisTrack Web at Epicor — a cloud SaaS distribution ERP for wholesale distribution & building materials serving 500–2,000 global customers. He leads the web product, owning its vision, roadmap and 1,400+ user-story backlog and prioritizing the legacy on-prem → cloud SaaS migration with C-suite/VP stakeholders across Product, Engineering and Sales — and the web product is now live at 50+ branches across 20+ customers." },
 
     { id: "api-platform", tags: ["api", "achievement", "flagship", "epicor", "agent", "ai"], anchor: "#experience",
-      text: "Flagship: he leads design → specification → delivery of BisTrack's API platform — ~6,000 endpoints across 1,000 API groups — exposing the full ERP for integrations, partner extensibility and composable / headless ERP. He built an AI agent that automates endpoint analysis and specification authoring, compressing the design cycle for a platform of this scale." },
+      text: "Flagship: he leads design → specification → delivery of BisTrack's API platform — ~6,000 endpoints across 1,000 API groups — exposing the full ERP for integrations, partner extensibility and composable / headless ERP. He built an AI agent that automates endpoint analysis and specification authoring, compressing the design cycle for a platform of this scale. The platform is in controlled release, with a pilot customer already seeing success." },
 
-    { id: "team", tags: ["team", "epicor"], anchor: "#experience",
-      text: "At Epicor he directs a cross-functional squad of 10–20 engineers through sprint planning, backlog refinement and release ceremonies." },
+    { id: "team", tags: ["team", "epicor", "hiring", "mentoring", "design"], anchor: "#experience",
+      text: "At Epicor he directs a cross-functional squad of 10–20 engineers through sprint planning, backlog refinement and release ceremonies — and he built the team that carried the web migration itself: a group of business analysts and a designer who moved legacy features onto the new Web UX, whom he trained to analyze and implement new requirements on their own." },
 
     { id: "epicor-metrics", tags: ["impact", "epicor", "order", "achievement"], anchor: "#impact",
       text: "At Epicor he improved order creation time by ~7% and advanced journey planning by 4%, addressing top customer pain points." },
@@ -142,17 +160,17 @@ window.RESUME_KB = {
     { id: "domains", tags: ["domain", "industries", "logistics", "erp", "retail", "supply"], anchor: "#skills",
       text: "Domain experience: B2B SaaS ERP, wholesale distribution, lumber & building materials, supply chain, logistics / last-mile / CEP, shipping & ports, transportation, retail & ecommerce, order management and BI — plus exposure to pharma & healthcare and automotive." },
 
-    { id: "side-projects", tags: ["projects", "side", "builder", "github", "diplodash", "finance"], anchor: "#projects",
+    { id: "side-projects", tags: ["projects", "side", "builder", "github", "diplodash", "finance"], anchor: "#side-projects",
       text: "Side projects: a Personal Finance Tracker app built from scratch (household income, expenses, savings goals and budgets — data model, taxonomy and reporting views defined end-to-end), and DiploDash — an open-source public-accountability dashboard tracking the Indian PM's foreign visits, diplomatic costs and outcomes (github.com/prabin-mishra/india-pm-foreign-visits-dashboard)." },
 
-    { id: "this-site", tags: ["projects", "website", "site", "chat", "ai"], anchor: "#projects",
+    { id: "this-site", tags: ["projects", "website", "site", "chat", "ai"], anchor: "#side-projects",
       text: "This website is itself a proof of work: a static, no-backend résumé whose 'Ask my résumé' chat runs entirely in the browser over a structured knowledge base — no trackers, no cookies." },
 
     { id: "stakeholders", tags: ["stakeholder", "roadmap"], anchor: "#experience",
       text: "He works directly with C-suite / VP stakeholders: roadmap prioritization at Epicor across Product, Engineering and Sales; roadmap reviews in Stockholm for a Nordic logistics enterprise; and Power BI training for a CFO / CXO leadership team." },
 
     { id: "strengths-summary", tags: ["strengths", "why", "value", "unique"], anchor: "#strengths",
-      text: "Three signature strengths: (1) enterprise B2B SaaS ERP depth — order-to-cash through inventory on a live cloud ERP; (2) end-to-end product ownership at scale — 400+ story backlog, squads of 10–20 engineers, platforms serving up to 10,000 daily users across 3 countries; (3) AI-forward operator — stacked AI/PM certifications plus real internal AI tooling built and adopted." },
+      text: "Three signature strengths: (1) enterprise B2B SaaS ERP depth — order-to-cash through inventory on a live cloud ERP; (2) end-to-end product ownership at scale — 1,400+ story backlog, squads of 10–20 engineers, platforms serving up to 10,000 daily users across 3 countries; (3) AI-forward operator — stacked AI/PM certifications plus real internal AI tooling built and adopted." },
 
     { id: "contact", tags: ["contact", "email", "linkedin", "github", "hire", "reach"], anchor: "#contact",
       text: "Email: prabinmishra87@gmail.com · LinkedIn: linkedin.com/in/prabinmishra · GitHub: github.com/prabin-mishra." },
@@ -172,6 +190,10 @@ window.RESUME_KB = {
       lead: "Here's the short version:",
       facts: ["identity", "experience-years", "current-role"] },
 
+    { id: "logistics", match: /\b(logistics?|supply chain|last.?mile|cep|parcels?|delivery|deliveries|shipping|ports?|terminals?|warehous\w*|freight|ocean|transport\w*)\b/,
+      lead: "Supply chain & logistics run through his whole career:",
+      facts: ["chain-coverage", "logistics-clients", "nordic-role", "business-case"] },
+
     { id: "achievement", match: /\b(achievements?|biggest|greatest|proud|flagship|impressive|notable|best work)\b/,
       lead: "His flagship achievement:",
       facts: ["api-platform", "business-case"] },
@@ -187,6 +209,10 @@ window.RESUME_KB = {
     { id: "api", match: /\b(apis?|endpoints?|integrations?|headless|composable|platform work)\b/,
       lead: "The API platform is his flagship:",
       facts: ["api-platform"] },
+
+    { id: "progression", match: /\b(progression|career (path|growth|arc|trajectory)|promot\w*|how did he (grow|progress)|levels?|trajector\w*|seniority|moved up|career move)\b/,
+      lead: "The trajectory, step by step:",
+      facts: ["progression", "timeline-summary"] },
 
     { id: "years", match: /\b(how long|how many years|years of experience|total experience|experience does|seniority)\b/,
       lead: "",
@@ -227,10 +253,6 @@ window.RESUME_KB = {
       lead: "Named enterprises he has delivered for:",
       facts: ["logistics-clients", "consulting"] },
 
-    { id: "logistics", match: /\b(logistics?|supply chain|last.?mile|cep|parcels?|delivery|deliveries|shipping|ports?|freight|transport\w*)\b/,
-      lead: "Logistics & supply chain run through his whole career:",
-      facts: ["logistics-clients", "nordic-role", "business-case"] },
-
     { id: "agile", match: /\b(agile|scrum|safe|kanban|sprints?|ceremon\w*|jira|confluence|backlogs?|refinement|story mapping)\b/,
       lead: "",
       facts: ["skills-agile", "team", "current-role"] },
@@ -243,7 +265,11 @@ window.RESUME_KB = {
       lead: "",
       facts: ["skills-cloud", "current-role"] },
 
-    { id: "projects", match: /\b(side project|projects|diplodash|finance tracker|builds|builder|hands.?on|portfolio)\b/,
+    { id: "case-studies", match: /\b(case stud\w*|projects?|project work|portfolio|builds|shipped|what has he (built|shipped)|examples? of (his )?work)\b/,
+      lead: "Five case studies, problem \u2192 action \u2192 outcome:",
+      facts: ["case-studies", "api-platform"] },
+
+    { id: "projects", match: /\b(side projects?|diplodash|finance tracker|builder|hands.?on|outside work|personal projects?)\b/,
       lead: "He builds outside work hours too:",
       facts: ["side-projects", "this-site"] },
 
